@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+    <h1>To Do List: <%= toDoLists.length %></h1> 
+    <form action="/submit" method="POST">
+        <label for="content">Add your list: </label>
+        <input type="text" name="content">
+        <input class="add" type="submit" value="Add">
+    </form>
+    <ul>
+        <% toDoLists.forEach((toDo) => { %>
+            <li>
+                <%=toDo%> <button class="delete" onclick='location.href = "/delete"'> Delete</button>
+            </li>
+        <%}) %>
+    </ul>
+</div>
+</body>
+</html>

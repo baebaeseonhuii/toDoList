@@ -27,6 +27,12 @@ app.post("/submit", (req,res) => {
     res.redirect("/");
 });
 
+app.get("/delete/:id", (req, res) => {
+    const deleteContent = req.params.id;
+    toDoLists = toDoLists.filter((value) => value != deleteContent);
+    res.redirect("/");
+});
+
 app.listen(port, () => {
     console.log(`Server running on ${port}. `);
 });
