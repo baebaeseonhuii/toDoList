@@ -1,0 +1,38 @@
+
+.body {
+    
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+    
+    /*
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.delete {
+    float: right;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+.add {
+    float: right;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
