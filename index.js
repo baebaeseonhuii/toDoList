@@ -27,7 +27,7 @@ app.post("/submit", (req,res) => {
     res.redirect("/");
 });
 
-app.get("/delete/:id", (req, res) => {
+app.get("/delete", (req, res) => {
     const deleteContent = req.params.id;
     toDoLists = toDoLists.filter((value) => value != deleteContent);
     res.redirect("/");
